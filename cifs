@@ -59,7 +59,7 @@ init() {
 	assertBinaryInstalled jq jq
 	assertBinaryInstalled mountpoint util-linux
 	assertBinaryInstalled base64 coreutils
-	echo '{ "status": "Success", "message": "The fstab/cifs flexvolume plugin was initialized successfully", "capabilities": { "attach": false } }'
+	echo '{ "status": "Success", "message": "The fstab/cifs flexvolume plugin was initialized successfully", "capabilities": { "attach": false, "selinuxRelabel": false } }'
 	exit 0
 }
 
